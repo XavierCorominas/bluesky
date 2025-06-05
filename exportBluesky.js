@@ -28,10 +28,11 @@ async function exportPosts() {
       date: record.createdAt,
       images: images,
     };
-  });
+  })
+  .slice(0, 5); // Limit to 5 posts
 
   fs.writeFileSync('sourcej.json', JSON.stringify(latestPosts, null, 2));
-  console.log('sourcej.json updated with images!');
+  console.log('sourcej.json updated with images! Showing latest 5 posts.');
 }
 
 exportPosts().catch(err => {
