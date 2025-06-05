@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Bluesky Feed</title>
   <style>
     body {
@@ -45,6 +45,7 @@
       font-size: 16px;
       margin: 0 0 8px 0;
       color: #333;
+      white-space: pre-wrap; /* Preserve line breaks */
     }
 
     .post small {
@@ -55,6 +56,13 @@
     a.username:hover {
       text-decoration: underline;
     }
+
+    .images img {
+      max-width: 100%;
+      margin-top: 10px;
+      border-radius: 8px;
+      display: block;
+    }
   </style>
 </head>
 <body>
@@ -62,7 +70,7 @@
 
   <script>
     const blueskyHandle = 'xavier-ct.bsky.social';
-    const avatarUrl = 'https://xaviercorominas.github.io/bluesky/avatar.jpg'; // Replace with real avatar if needed
+    const avatarUrl = 'https://xaviercorominas.github.io/bluesky/avatar.jpg'; // Replace with your avatar URL
 
     fetch('https://xaviercorominas.github.io/bluesky/sourcej.json')
       .then(res => res.json())
@@ -72,10 +80,10 @@
         data.forEach(post => {
           const div = document.createElement('div');
           div.className = 'post';
-          const encodedText = encodeURIComponent(post.text);
+
           const blueskyPostUrl = `https://bsky.app/profile/${blueskyHandle}`;
 
-          div.innerHTML = `
+          let html = `
             <div class="header">
               <img class="avatar" src="${avatarUrl}" alt="Avatar" />
               <a class="username" href="${blueskyPostUrl}" target="_blank">@${blueskyHandle}</a>
@@ -83,6 +91,17 @@
             <p>${post.text}</p>
             <small>${new Date(post.date).toLocaleString()}</small>
           `;
+
+          // Add images if any
+          if (post.images && post.images.length > 0) {
+            html += `<div class="images">`;
+            post.images.forEach(url => {
+              html += `<img src="${url}" alt="Post image" />`;
+            });
+            html += `</div>`;
+          }
+
+          div.innerHTML = html;
           container.appendChild(div);
         });
       })
