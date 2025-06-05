@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { font-family: sans-serif; padding: 10px; }
+    .post { margin-bottom: 1em; border-bottom: 1px solid #ccc; padding-bottom: 0.5em; }
+  </style>
+</head>
+<body>
+  <div id="posts">Loading...</div>
+
+  <script>
+    fetch('https://xaviercorominas.github.io/bluesky/sourcej.json')
+      .then(res => res.json())
+      .then(data => {
+        const container = document.getElementById('posts');
+        container.innerHTML = '';
+        data.forEach(post => {
+          const div = document.createElement('div');
+          div.className = 'post';
+          div.innerHTML = `<p>${post.text}</p><small>${new Date(post.date).toLocaleString()}</small>`;
+          container.appendChild(div);
+        });
+      })
+      .catch(error => {
+        document.getElementById('posts').innerText = 'Failed to load posts.';
+        console.error(error);
+      });
+  </script>
+</body>
+</html>
