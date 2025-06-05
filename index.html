@@ -11,7 +11,10 @@
 
   <script>
     fetch('sourcej.json')
-      .then(res => res.json())
+      .then(res => {
+        if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+        return res.json();
+      })
       .then(data => {
         const container = document.getElementById('posts');
         container.innerHTML = '';
@@ -21,6 +24,11 @@
           div.innerHTML = `<p>${post.text}</p><small>${new Date(post.date).toLocaleString()}</small>`;
           container.appendChild(div);
         });
+      })
+      .catch(err => {
+        const container = document.getElementById('posts');
+        container.innerHTML = `<p style="color:red;">Error loading posts: ${err.message}</p>`;
+        console.error('Fetch error:', err);
       });
   </script>
 </body>
