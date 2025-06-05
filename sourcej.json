@@ -1,13 +1,10 @@
-// Requires: npm install @atproto/api
-import { BskyAgent } from '@atproto/api';
-
-const agent = new BskyAgent({ service: 'https://bsky.social' });
-
-await agent.login({ identifier: 'xavier-ct.bsky.social', password: 'mordor1P' });
-
-const feed = await agent.getAuthorFeed({ actor: 'xavier-ct.bsky.social' });
-
-const latestPosts = feed.data.feed.map(item => ({
-  text: item.post.record.text,
-  date: item.post.record.createdAt,
-}));
+[
+  {
+    "text": "Hello Bluesky! This is a test post.",
+    "date": "2025-06-05T10:00:00Z"
+  },
+  {
+    "text": "Second post, manually added.",
+    "date": "2025-06-04T09:30:00Z"
+  }
+]
