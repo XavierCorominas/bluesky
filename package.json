@@ -4,6 +4,6 @@
   "type": "module",
   "main": "exportBluesky.js",
   "dependencies": {
-    "@atproto/api": "^1.2.0"
+    "@atproto/api": "^0.2.0"
   }
 }
