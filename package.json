@@ -1,0 +1,9 @@
+{
+  "name": "bluesky-export",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "exportBluesky.js",
+  "dependencies": {
+    "@atproto/api": "^1.2.0"
+  }
+}
