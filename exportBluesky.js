@@ -1,5 +1,5 @@
-import { BskyAgent } from '@atproto/api';
-import fs from 'fs';
+import pkg from '@atproto/api';
+const { BskyAgent } = pkg;
 
 async function exportPosts() {
   const agent = new BskyAgent({ service: 'https://bsky.social' });
