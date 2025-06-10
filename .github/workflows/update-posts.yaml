@@ -2,7 +2,7 @@ name: Update Bluesky Posts JSON
 
 on:
   schedule:
-    - cron: '0 * * * *'  # Every hour at minute 0
+    - cron: '0 13 * * 1'  # Every hour at minute 0
   workflow_dispatch:      # Manual trigger
 
 jobs:
