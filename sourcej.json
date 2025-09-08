@@ -1,5 +1,17 @@
 [
   {
+    "text": "PlanTUS-transducer position\n\nFinding optimal transducer position for each participant is hard. You certainly can’t run all possible individualized simulations. Here’s a way to start better: \n\nFind positions that respect\n- transducer focus limits\n- skull thickness\n- transducer tilt, etc. \n\n#PlanTUS",
+    "date": "2025-09-02T09:23:12.698Z",
+    "images": []
+  },
+  {
+    "text": "Optional: one score to guide choices – weight metrics into a composite map that ranks candidate placements.",
+    "date": "2025-09-01T18:14:54.281Z",
+    "images": [
+      "https://cdn.bsky.app/img/feed_full/undefined@jpeg"
+    ]
+  },
+  {
     "text": "Causal necessity of human hippocampus for structure-based inference in learning  https://www.biorxiv.org/content/10.1101/2025.08.19.664920v1 ",
     "date": "2025-08-19T14:15:15+00:00",
     "images": []
@@ -12,16 +24,6 @@
   {
     "text": "A Coupling Model of Transcranial Magnetic Stimulation Induced Electric Fields to Neural State Variables  https://www.biorxiv.org/content/10.1101/2025.08.11.669601v1 ",
     "date": "2025-08-15T20:15:39+00:00",
-    "images": []
-  },
-  {
-    "text": "Just dropped in @natcomms.nature.com: we show that re-engaging a thalamic–ventral tegmental circuit with deep brain stimulation can reignite consciousness in patients with severe brain injury. Work led by Aaron Warren, with @andreashorn.org @foxmdphd.bsky.social @ others! tinyurl.com/4kz8j89b",
-    "date": "2025-07-21T21:39:08.750Z",
-    "images": []
-  },
-  {
-    "text": "Brani’s Stimupedia",
-    "date": "2025-07-30T19:46:29.712Z",
     "images": []
   }
 ]
