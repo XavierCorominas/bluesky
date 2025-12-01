@@ -1,5 +1,15 @@
 [
   {
+    "text": "Nature research paper: Vicarious body maps bridge vision and touch in the human brain\n\ngo.nature.com/4839zaL",
+    "date": "2025-11-27T20:36:04.360Z",
+    "images": []
+  },
+  {
+    "text": "New study out today in Nature Comms: www.nature.com/articles/s41..., in which we set out to test whether ultrasound could influence the reward-related learning computations of the nucleus accumbens, building on decades of work on dopaminergic prediction error and reinforcement learning. And it did.",
+    "date": "2025-11-28T12:26:52.084Z",
+    "images": []
+  },
+  {
     "text": "🧠⚡ We present a biophysically grounded framework coupling realistic neuron morphologies to TMS.\n\nOur model links direct axonal activation from L2/3 to L5 corticospinal neurons, revealing direction- & dose-dependent spatiotemporal patterns.\n\nwww.biorxiv.org/content/10.1...",
     "date": "2025-08-15T20:51:39.376Z",
     "images": []
@@ -15,15 +25,5 @@
     "images": [
       "https://cdn.bsky.app/img/feed_full/undefined@jpeg"
     ]
-  },
-  {
-    "text": "Causal necessity of human hippocampus for structure-based inference in learning  https://www.biorxiv.org/content/10.1101/2025.08.19.664920v1 ",
-    "date": "2025-08-19T14:15:15+00:00",
-    "images": []
-  },
-  {
-    "text": "A Practical Preprocessing Pipeline for Concurrent TMS-iEEG: Critical Steps and Methodological Considerations  https://www.biorxiv.org/content/10.1101/2025.08.13.670238v1 ",
-    "date": "2025-08-18T19:16:21+00:00",
-    "images": []
   }
 ]
