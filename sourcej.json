@@ -1,5 +1,15 @@
 [
   {
+    "text": "This is 🤯\n\nAll publicly available. Looks like an amazing new histology-based human probabilistic atlas and parcellation tool. \n\n#neuroskyence #mri #brainmapping\n\nA probabilistic histological atlas of the human brain for MRI segmentation | Nature share.google/5AD0iW7pxgb4...",
+    "date": "2025-11-06T05:35:29.012Z",
+    "images": []
+  },
+  {
+    "text": "tACS induces state-dependent shifts in inhibitory phase preference consistent with phase precession  https://www.biorxiv.org/content/10.64898/2025.11.28.691215v1 ",
+    "date": "2025-12-02T18:15:53+00:00",
+    "images": []
+  },
+  {
     "text": "Nature research paper: Vicarious body maps bridge vision and touch in the human brain\n\ngo.nature.com/4839zaL",
     "date": "2025-11-27T20:36:04.360Z",
     "images": []
@@ -13,17 +23,5 @@
     "text": "🧠⚡ We present a biophysically grounded framework coupling realistic neuron morphologies to TMS.\n\nOur model links direct axonal activation from L2/3 to L5 corticospinal neurons, revealing direction- & dose-dependent spatiotemporal patterns.\n\nwww.biorxiv.org/content/10.1...",
     "date": "2025-08-15T20:51:39.376Z",
     "images": []
-  },
-  {
-    "text": "PlanTUS-transducer position\n\nFinding optimal transducer position for each participant is hard. You certainly can’t run all possible individualized simulations. Here’s a way to start better: \n\nFind positions that respect\n- transducer focus limits\n- skull thickness\n- transducer tilt, etc. \n\n#PlanTUS",
-    "date": "2025-09-02T09:23:12.698Z",
-    "images": []
-  },
-  {
-    "text": "Optional: one score to guide choices – weight metrics into a composite map that ranks candidate placements.",
-    "date": "2025-09-01T18:14:54.281Z",
-    "images": [
-      "https://cdn.bsky.app/img/feed_full/undefined@jpeg"
-    ]
   }
 ]
